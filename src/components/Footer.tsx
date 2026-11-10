@@ -1,4 +1,4 @@
-import { Github, Twitter, Mail, ExternalLink } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -13,26 +13,13 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a 
-                href="https://github.com/metamint-nft" 
+                href="https://github.com/Dhanu188/metamint-genesis"
+                aria-label="Source code on GitHub"
                 className="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Github className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://twitter.com/metamint" 
-                className="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a 
-                href="mailto:hello@metamint.com" 
-                className="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors"
-              >
-                <Mail className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -49,9 +36,6 @@ const Footer = () => {
               </a>
               <a href="#about" className="block text-sm opacity-90 hover:opacity-100 hover:text-primary transition-colors">
                 About
-              </a>
-              <a href="/docs" className="block text-sm opacity-90 hover:opacity-100 hover:text-primary transition-colors">
-                Documentation
               </a>
             </nav>
           </div>
@@ -87,8 +71,14 @@ const Footer = () => {
                 Amoy Explorer
                 <ExternalLink className="w-3 h-3" />
               </a>
-              <a href="/help" className="block text-sm opacity-90 hover:opacity-100 hover:text-primary transition-colors">
-                Help Center
+              <a 
+                href="https://faucet.polygon.technology/" 
+                className="flex items-center gap-2 text-sm opacity-90 hover:opacity-100 hover:text-primary transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Amoy Faucet
+                <ExternalLink className="w-3 h-3" />
               </a>
             </nav>
           </div>
@@ -107,7 +97,7 @@ const Footer = () => {
               </div>
               <div className="p-3 bg-white/5 rounded-lg">
                 <div className="font-medium text-primary mb-1">Currency</div>
-                <div className="opacity-90">MATIC (Testnet)</div>
+                <div className="opacity-90">POL (Testnet)</div>
               </div>
             </div>
           </div>
@@ -116,18 +106,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-sm opacity-90">
-            © 2024 MetaMint. All rights reserved.
-          </div>
-          <div className="flex gap-6 text-sm">
-            <a href="/privacy" className="opacity-90 hover:opacity-100 hover:text-primary transition-colors">
-              Privacy Policy
-            </a>
-            <a href="/terms" className="opacity-90 hover:opacity-100 hover:text-primary transition-colors">
-              Terms of Service
-            </a>
-            <a href="/cookies" className="opacity-90 hover:opacity-100 hover:text-primary transition-colors">
-              Cookie Policy
-            </a>
+            © {new Date().getFullYear()} MetaMint. All rights reserved.
           </div>
         </div>
       </div>

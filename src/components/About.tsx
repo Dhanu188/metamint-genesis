@@ -78,7 +78,7 @@ const About = () => {
               <div className="text-sm text-muted-foreground">Blockchain Network</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-primary">Web3.js</div>
+              <div className="text-3xl font-bold text-primary">wagmi + viem</div>
               <div className="text-sm text-muted-foreground">Blockchain Integration</div>
             </div>
             <div className="space-y-2">
