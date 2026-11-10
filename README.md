@@ -39,6 +39,8 @@ If your contract's mint function has a different signature, update `nftAbi` and 
 
 Get test POL from the [Polygon faucet](https://faucet.polygon.technology/).
 
+**Testers:** see [TESTING.md](TESTING.md) for wallet setup, sample data and a test checklist.
+
 ## 📜 Scripts
 
 - `npm run dev` – start the dev server
